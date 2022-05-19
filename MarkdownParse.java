@@ -26,7 +26,7 @@ public class MarkdownParse {
             if (openBracket == -1 || closeBracket == -1 || openParen == -1 ||
             closeParen == -1) break;
             // Get the link and add it to the list.
-            toReturn.add(markdown.substring(openParen + 1, closeParen));
+            toReturn.add(markdown.substring(openParen + 1, closeParen).trim());
             currentIndex = closeParen + 1;
         }
 

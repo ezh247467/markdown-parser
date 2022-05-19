@@ -49,6 +49,6 @@ public class MarkdownParseTest {
         Path fileName = Path.of("Report-4-Markdown/3-snipReport.md");
         String content = Files.readString(fileName);
         ArrayList<String> links = MarkdownParse.getLinks(content);
-        assertEquals(List.of("https://www.twitter.com", "https://sites.google.com/eng.ucsd.edu/cse-15l-spring-2022/schedu", "https://cse.ucsd.edu/"), links);
+        assertEquals(List.of("https://www.twitter.com", "https://cse.ucsd.edu/"), links);
     }
 }
